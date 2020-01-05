@@ -1,7 +1,7 @@
 {
-  "name": "codesandbox-vuepress",
+  "name": "docs",
   "version": "1.0.0",
-  "description": "VuePress starter template for CodeSandbox",
+  "description": "",
   "author": "Victoria Bergquist",
   "license": "MIT",
   "scripts": {
@@ -14,5 +14,6 @@
   },
   "devDependencies": {
     "vuepress": "^1.0.0"
-  }
+  },
+  "keywords": []
 }
