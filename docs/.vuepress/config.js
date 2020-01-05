@@ -6,14 +6,23 @@
 // https://v1.vuepress.vuejs.org/config/
 
 module.exports = {
-  title: 'VuePress + CodeSandbox',
-  description: 'VuePress starter template for CodeSandbox',
+  title: "VuePress + CodeSandbox",
+  description: "VuePress starter template for CodeSandbox",
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'VuePress', link: 'https://vuepress.vuejs.org/' },
-      { text: 'GitHub', link: 'https://github.com/vicbergquist/codesandbox-vuepress/' },
+      { text: "Home", link: "/" },
+      { text: "Guide", link: "/guide/" },
+      { text: "VuePress", link: "https://vuepress.vuejs.org/" },
+      {
+        text: "GitHub",
+        link: "https://github.com/vicbergquist/codesandbox-vuepress/"
+      }
+    ]
+  },
+  postcss: {
+    plugins: [
+      require("autoprefixer"),
+      require("tailwindcss")("./tailwind.config.js")
     ]
   }
-}
+};

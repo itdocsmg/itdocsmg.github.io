@@ -15,5 +15,9 @@
   "devDependencies": {
     "vuepress": "^1.2.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "autoprefixer": "9.7.3",
+    "tailwindcss": "1.1.4"
+  }
 }
