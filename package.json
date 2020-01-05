@@ -5,8 +5,8 @@
   "author": "Victoria Bergquist",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
