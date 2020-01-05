@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/itdocsmg/itdocsmg.github.io.svg?branch=source)](https://travis-ci.org/itdocsmg/itdocsmg.github.io)
 # Public
 
 **This directory is not required, you can delete it if you don't want to use it.**
