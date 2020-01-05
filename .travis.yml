@@ -15,7 +15,7 @@ deploy:
   cleanup: true
   local_dir: docs/.vuepress/dist
   token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  repo: itdocsmg/itdocsmg.github.io
+  # repo: itdocsmg/itdocsmg.github.io
   keep_history: true
   target_branch: master
   on:
