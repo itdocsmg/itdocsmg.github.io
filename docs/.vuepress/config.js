@@ -5,6 +5,20 @@
 // See the documentation for more information on how to use it
 // https://v1.vuepress.vuejs.org/config/
 
+const purgecss = require('@fullhuman/postcss-purgecss')({
+
+  // Specify the paths to all of the template files in your project 
+  content: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+    // etc.
+  ],
+
+  // Include any special characters you're using in this regular expression
+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+});
+
 module.exports = {
   title: "VuePress + CodeSandbox",
   description: "VuePress starter template for CodeSandbox",
@@ -22,7 +36,10 @@ module.exports = {
   postcss: {
     plugins: [
       require("autoprefixer"),
-      require("tailwindcss")("./tailwind.config.js")
+      require("tailwindcss")("./tailwind.config.js"),
+      ...process.env.NODE_ENV === 'production'
+      ? [purgecss]
+      : []
     ]
   }
 };
