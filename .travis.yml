@@ -1,18 +1,10 @@
 language: node_js
 node_js:
-  - "12"
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
+  - lts/*
 install:
-  - npm install -g vuepress
+  - yarn install # npm ci
 script:
-  - npm run docs:build
+  - yarn build # npm run docs:build
 cache:
   directories:
     - "node_modules"
