@@ -12,6 +12,8 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
+      { text: "CV", link: "/cv/" },
+      { text: "About", link: "/about/" },
       { text: "VuePress", link: "https://vuepress.vuejs.org/" },
       {
         text: "GitHub",
@@ -19,7 +21,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    "@silvanite/tailwind"
-  ]
+  plugins: ["@silvanite/tailwind"],
+  sidebar: "auto"
 };
